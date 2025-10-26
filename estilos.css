@@ -1,0 +1,136 @@
+
+/* ESTILO DE FUENTE Y DE LA PÁGINA*/
+body {
+    font-family: 'Roboto', sans-serif;    
+    margin: 0;
+    background: url('fresita.jpg') no-repeat center center/cover; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* FONDO */
+
+.main-background-blur {
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: rgba(0, 0, 0, 0.4); 
+    
+    /* BLUR/Glassmorphism */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+}
+
+
+/* CAJITA LOGIN (PARA QUE SE VEA SEPARADO) */
+
+.login-container {
+    width: 350px;
+    padding: 40px;
+    text-align: center;
+    color: white; 
+    border-radius: 15px;
+    /* Estilo Glassmorphism de la cajita solo para darle sombra */
+    background: rgba(255, 255, 255, 0.15); 
+    box-shadow: 0 8px 32px 0 rgba(234, 36, 194, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-weight: 300; 
+}
+
+
+/* INPUTS */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block; 
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500; 
+    margin-bottom: 5px; 
+    color: rgba(255, 255, 255, 0.9); 
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px; 
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box; 
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white; 
+    transition: background 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+/* ÚNICO BOTÓN REGISTRARSE */
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #ec14ac, #ff64d6); 
+    color: white;
+    font-size: 18px;
+    /* DESTACAR*/
+    font-weight: bold; 
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 0, 149, 0.4);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.login-btn:hover {
+    background: linear-gradient(to right, #ec14ac, #ff64D6);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 0, 99, 0.4);
+}
+
+
+/* REDES SOCIALES */
+
+.social-connect {
+    margin-top: 30px;
+}
+
+.social-connect p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.social-icons .icon-link {
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%; 
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.social-icons .icon-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
